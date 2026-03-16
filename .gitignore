@@ -1,0 +1,8 @@
+.env
+.ppk
+__pycache__
+.DS_STORE
+.env*
+env*
+*.env
+.venv
