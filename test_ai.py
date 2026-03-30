@@ -6,10 +6,12 @@ from dotenv import load_dotenv
 # Load environment variables from .env
 load_dotenv()
 
+print("line 9")
 # Configure the API key
 genai.configure(api_key=os.getenv("API_KEY"))
 
 def test_gemini_call():
+    print("beginning of test_gemini_call")
     start = time.time()
     try:
         model = genai.GenerativeModel('gemini-2.5-flash')
